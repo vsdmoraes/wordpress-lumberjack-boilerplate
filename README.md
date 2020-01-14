@@ -11,7 +11,7 @@ Features:
 1. Clone this repo into your Projects directory
 
     ```
-    git clone https://github.com/docksal/boilerplate-wordpress.git wordpress-lumberjack-boilerplate
+    git clone https://github.com/GuilhermeRios/wordpress-lumberjack-boilerplate.git wordpress-lumberjack-boilerplate
     cd wordpress-lumberjack-boilerplate
     ```
 
