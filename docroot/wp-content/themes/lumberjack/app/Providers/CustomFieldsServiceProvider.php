@@ -12,10 +12,10 @@ class CustomFieldsServiceProvider extends ServiceProvider
     {
         Carbon_Fields::boot();
 
-        $postTypesToRegister = $config->get('posttypes.register');
+        $postTypesToRegister = $config->get('customfields.register');
 
         foreach ($postTypesToRegister as $postType) {
-            add_action('carbon_fields_register_fields', [$postType, 'registerCarbonFields']);
+            add_action('carbon_fields_register_fields', [$postType, 'register']);
         }
     }
 }

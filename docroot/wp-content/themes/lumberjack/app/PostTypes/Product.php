@@ -41,13 +41,6 @@ class Product extends Post
         ];
     }
 
-    public static function registerCarbonFields()
-    {
-        Container::make('post_meta', 'Settings')->where('post_type', '=', self::getPostType())->add_fields([
-            Field::make('textarea', 'crb_description', 'Description'),
-        ]);
-    }
-
     public function getCarbonField($field_name)
     {
         $crb_field_name = '_crb_' . $field_name;
